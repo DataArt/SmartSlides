@@ -16,8 +16,8 @@ let kRestoreNotification = "kRestoreNotification"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, ConnectivityManagerDelegate {
-    let kDropboxAppKey = "0czjtype77lm8g5"
-    let kDropboxAppSecret = "plqf37m5qoeg55h"
+    let kDropboxAppKey = ""
+    let kDropboxAppSecret = ""
 
     
     var window: UIWindow?

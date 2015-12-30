@@ -153,8 +153,6 @@
 		8A18329E1A7BA6D30030C5EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A1832A01A7BA6D30030C5EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		8A1832A21A7BA6D30030C5EA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8A1832AE1A7BA9DC0030C5EA /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
-		8A1832AF1A7BA9DC0030C5EA /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		8A7565491A82476D000E2428 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		8ACA40AF1A7F8D110080F568 /* SmartSlides WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "SmartSlides WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		8ACBBEF61A83A9920083A9E6 /* Gotham-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Bold.otf"; sourceTree = "<group>"; };
@@ -410,8 +408,6 @@
 				23DF179C1C1195590081A94F /* Security.framework */,
 				23DF179A1C1195370081A94F /* DropboxSDK.framework */,
 				8A7565491A82476D000E2428 /* QuartzCore.framework */,
-				8A1832AE1A7BA9DC0030C5EA /* Crashlytics.framework */,
-				8A1832AF1A7BA9DC0030C5EA /* Fabric.framework */,
 				37D1D1011C2C27A56A1DEAE8 /* libPods-SmartSlides.a */,
 			);
 			name = Frameworks;
@@ -657,7 +653,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "./Fabric.framework/run 03015f8fd1f43036e0fe0c77fe7c6ad6dcb5059a db588d560995f6399926aa98bafec1d7ddc6d4e6a8cc34180e7f4fa32d1a6e1f\n";
+			shellScript = "
+";
 		};
 /* End PBXShellScriptBuildPhase section */
 

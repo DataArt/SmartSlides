@@ -6,6 +6,7 @@ target 'SmartSlides' do
 
 pod 'Fabric'
 pod 'Crashlytics'
+pod 'Dropbox-iOS-SDK'
 
 end
 
