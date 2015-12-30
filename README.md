@@ -65,9 +65,9 @@ Simple ping message sending & receiving command class example:
 
 ```
 
-Presentation files can be provided by Dropbox (just create app page on [Dropbox] (https://www.dropbox.com/developers) and add key & secret string in AppDelegate), Mail app attachments sharing and 2 presentation files are already presented in the app by default)
+Presentation files can be provided by Dropbox (just create app page on [Dropbox] (https://www.dropbox.com/developers) and add key & secret string in AppDelegate), Mail app attachments and also 2 presentation files are already presented in the app by default
 
-## Frameworks & 3rd party components used
+## Frameworks & 3rd party components
 
 * MBProgressHUD
 * Dropbox SDK
