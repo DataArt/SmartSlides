@@ -1,0 +1,1002 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		231DD8AC1C3173EB0028C4E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 231DD8AB1C3173EB0028C4E6 /* Images.xcassets */; };
+		231DD8B21C3174130028C4E6 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DD8AD1C3174130028C4E6 /* AboutViewController.swift */; };
+		231DD8B31C3174130028C4E6 /* BrowsingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DD8AE1C3174130028C4E6 /* BrowsingViewController.swift */; };
+		231DD8B41C3174130028C4E6 /* ConnectivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DD8AF1C3174130028C4E6 /* ConnectivityViewController.swift */; };
+		231DD8B51C3174130028C4E6 /* PresentationSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DD8B01C3174130028C4E6 /* PresentationSelectViewController.swift */; };
+		231DD8B61C3174130028C4E6 /* PresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DD8B11C3174130028C4E6 /* PresentationViewController.swift */; };
+		231DD8BB1C3174400028C4E6 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DD8B91C3174400028C4E6 /* ProgressView.swift */; };
+		231DD8BC1C3174400028C4E6 /* ProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 231DD8BA1C3174400028C4E6 /* ProgressView.xib */; };
+		231DD8BF1C3174470028C4E6 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 231DD8BD1C3174470028C4E6 /* Main_iPad.storyboard */; };
+		231DD8C01C3174470028C4E6 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 231DD8BE1C3174470028C4E6 /* Main_iPhone.storyboard */; };
+		231DD8C31C3174730028C4E6 /* AFDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DD8C11C3174730028C4E6 /* AFDateExtension.swift */; };
+		231DD8C41C3174730028C4E6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231DD8C21C3174730028C4E6 /* Extensions.swift */; };
+		231DD8C71C3192930028C4E6 /* Presentation #1.pptx in Resources */ = {isa = PBXBuildFile; fileRef = 231DD8C51C31910A0028C4E6 /* Presentation #1.pptx */; };
+		231DD8C81C3192950028C4E6 /* Presentation #2.key in Resources */ = {isa = PBXBuildFile; fileRef = 231DD8C61C3191EC0028C4E6 /* Presentation #2.key */; };
+		2357DA4A1C286A18002584D4 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1832921A7BA6D30030C5EA /* InterfaceController.swift */; };
+		23C2EE6B1BFCD7EA00AEE75E /* PresentationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C2EE6A1BFCD7EA00AEE75E /* PresentationSession.swift */; };
+		23C2EE6F1BFCDA4500AEE75E /* ConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C2EE6E1BFCDA4500AEE75E /* ConnectivityManager.swift */; };
+		23DBE5581BEBA8770057E490 /* SmartSlides WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8A18328E1A7BA6D20030C5EA /* SmartSlides WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		23DBE55B1BEBA8770057E490 /* SmartSlides WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8A1832981A7BA6D30030C5EA /* SmartSlides WatchKit App.app */; };
+		23DF179B1C1195370081A94F /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DF179A1C1195370081A94F /* DropboxSDK.framework */; };
+		23DF179D1C1195590081A94F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DF179C1C1195590081A94F /* Security.framework */; };
+		23F074091C2D7B0E00563DF9 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F074081C2D7B0E00563DF9 /* MBProgressHUD.m */; };
+		8A1832931A7BA6D30030C5EA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1832921A7BA6D30030C5EA /* InterfaceController.swift */; };
+		8A1832951A7BA6D30030C5EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A1832941A7BA6D30030C5EA /* Images.xcassets */; };
+		8A1832A11A7BA6D30030C5EA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A18329F1A7BA6D30030C5EA /* Interface.storyboard */; };
+		8A1832A31A7BA6D30030C5EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A1832A21A7BA6D30030C5EA /* Images.xcassets */; };
+		8A75654A1A82476D000E2428 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7565491A82476D000E2428 /* QuartzCore.framework */; };
+		8ACBBEFE1A83A9920083A9E6 /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8ACBBEF61A83A9920083A9E6 /* Gotham-Bold.otf */; };
+		8ACBBEFF1A83A9920083A9E6 /* Gotham-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8ACBBEF71A83A9920083A9E6 /* Gotham-BoldItalic.otf */; };
+		8ACBBF001A83A9920083A9E6 /* Gotham-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8ACBBEF81A83A9920083A9E6 /* Gotham-Book.otf */; };
+		8ACBBF011A83A9920083A9E6 /* Gotham-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8ACBBEF91A83A9920083A9E6 /* Gotham-BookItalic.otf */; };
+		8ACBBF021A83A9920083A9E6 /* Gotham-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8ACBBEFA1A83A9920083A9E6 /* Gotham-Light.otf */; };
+		8ACBBF031A83A9920083A9E6 /* Gotham-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8ACBBEFB1A83A9920083A9E6 /* Gotham-LightItalic.otf */; };
+		8ACBBF041A83A9920083A9E6 /* Gotham-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8ACBBEFC1A83A9920083A9E6 /* Gotham-Medium.otf */; };
+		8ACBBF051A83A9920083A9E6 /* Gotham-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8ACBBEFD1A83A9920083A9E6 /* Gotham-MediumItalic.otf */; };
+		8ACBBF061A83BB5C0083A9E6 /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8ACBBEF61A83A9920083A9E6 /* Gotham-Bold.otf */; };
+		8ACBBF071A83BB5C0083A9E6 /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8ACBBEF61A83A9920083A9E6 /* Gotham-Bold.otf */; };
+		8ACBBF081A83BB5F0083A9E6 /* Gotham-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8ACBBEF71A83A9920083A9E6 /* Gotham-BoldItalic.otf */; };
+		8ACBBF091A83BB5F0083A9E6 /* Gotham-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8ACBBEF71A83A9920083A9E6 /* Gotham-BoldItalic.otf */; };
+		8ACBBF0A1A83BB620083A9E6 /* Gotham-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8ACBBEF81A83A9920083A9E6 /* Gotham-Book.otf */; };
+		8ACBBF0B1A83BB620083A9E6 /* Gotham-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8ACBBEF81A83A9920083A9E6 /* Gotham-Book.otf */; };
+		8ACBBF0C1A83BB640083A9E6 /* Gotham-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8ACBBEF91A83A9920083A9E6 /* Gotham-BookItalic.otf */; };
+		8ACBBF0D1A83BB650083A9E6 /* Gotham-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8ACBBEF91A83A9920083A9E6 /* Gotham-BookItalic.otf */; };
+		8ACBBF0E1A83BB6D0083A9E6 /* Gotham-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8ACBBEFA1A83A9920083A9E6 /* Gotham-Light.otf */; };
+		8ACBBF0F1A83BB6E0083A9E6 /* Gotham-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8ACBBEFA1A83A9920083A9E6 /* Gotham-Light.otf */; };
+		8ACBBF101A83BB6F0083A9E6 /* Gotham-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8ACBBEFB1A83A9920083A9E6 /* Gotham-LightItalic.otf */; };
+		8ACBBF111A83BB700083A9E6 /* Gotham-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8ACBBEFB1A83A9920083A9E6 /* Gotham-LightItalic.otf */; };
+		8ACBBF121A83BB720083A9E6 /* Gotham-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8ACBBEFC1A83A9920083A9E6 /* Gotham-Medium.otf */; };
+		8ACBBF131A83BB720083A9E6 /* Gotham-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8ACBBEFC1A83A9920083A9E6 /* Gotham-Medium.otf */; };
+		8ACBBF141A83BB750083A9E6 /* Gotham-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8ACBBEFD1A83A9920083A9E6 /* Gotham-MediumItalic.otf */; };
+		8ACBBF151A83BB750083A9E6 /* Gotham-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8ACBBEFD1A83A9920083A9E6 /* Gotham-MediumItalic.otf */; };
+		963F0E7D1A443F56000C6201 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963F0E7C1A443F56000C6201 /* AppDelegate.swift */; };
+		963F0E9E1A4440B6000C6201 /* FrameCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963F0E9D1A4440B6000C6201 /* FrameCutter.swift */; };
+		963FAE0C1A4ABEF200FDE247 /* AdvertiserHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963FAE0B1A4ABEF200FDE247 /* AdvertiserHandler.swift */; };
+		963FAE0E1A4AC3B900FDE247 /* SessionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963FAE0D1A4AC3B900FDE247 /* SessionHandler.swift */; };
+		963FAE101A4AC6C500FDE247 /* BrowsingHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963FAE0F1A4AC6C500FDE247 /* BrowsingHandler.swift */; };
+		963FAE121A4B148F00FDE247 /* ContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963FAE111A4B148F00FDE247 /* ContentManager.swift */; };
+		964EC4C61A51908A00246F5C /* FIle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964EC4C51A51908A00246F5C /* FIle.swift */; };
+		96B613F51A4C296E005E3826 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B613F41A4C296E005E3826 /* Logger.swift */; };
+		A2BCF07D792EAB628B41E5A1 /* libPods-SmartSlides.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D1D1011C2C27A56A1DEAE8 /* libPods-SmartSlides.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23DBE5561BEBA8770057E490 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 963F0E6F1A443F56000C6201 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A18328D1A7BA6D20030C5EA;
+			remoteInfo = "SmartSlides WatchKit Extension";
+		};
+		23DBE5601BF25A940057E490 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 963F0E6F1A443F56000C6201 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A1832971A7BA6D30030C5EA;
+			remoteInfo = "SmartSlides WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		23DBE55C1BEBA8770057E490 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				23DBE5581BEBA8770057E490 /* SmartSlides WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23DBE55D1BEBA8770057E490 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				23DBE55B1BEBA8770057E490 /* SmartSlides WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23DF17B01C15C2510081A94F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		231DD8AB1C3173EB0028C4E6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		231DD8AD1C3174130028C4E6 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutViewController.swift; path = Controllers/AboutViewController.swift; sourceTree = "<group>"; };
+		231DD8AE1C3174130028C4E6 /* BrowsingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BrowsingViewController.swift; path = Controllers/BrowsingViewController.swift; sourceTree = "<group>"; };
+		231DD8AF1C3174130028C4E6 /* ConnectivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConnectivityViewController.swift; path = Controllers/ConnectivityViewController.swift; sourceTree = "<group>"; };
+		231DD8B01C3174130028C4E6 /* PresentationSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PresentationSelectViewController.swift; path = Controllers/PresentationSelectViewController.swift; sourceTree = "<group>"; };
+		231DD8B11C3174130028C4E6 /* PresentationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PresentationViewController.swift; path = Controllers/PresentationViewController.swift; sourceTree = "<group>"; };
+		231DD8B91C3174400028C4E6 /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgressView.swift; path = Views/ProgressView.swift; sourceTree = "<group>"; };
+		231DD8BA1C3174400028C4E6 /* ProgressView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProgressView.xib; path = Views/ProgressView.xib; sourceTree = "<group>"; };
+		231DD8BD1C3174470028C4E6 /* Main_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPad.storyboard; sourceTree = "<group>"; };
+		231DD8BE1C3174470028C4E6 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
+		231DD8C11C3174730028C4E6 /* AFDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFDateExtension.swift; sourceTree = "<group>"; };
+		231DD8C21C3174730028C4E6 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		231DD8C51C31910A0028C4E6 /* Presentation #1.pptx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Presentation #1.pptx"; sourceTree = "<group>"; };
+		231DD8C61C3191EC0028C4E6 /* Presentation #2.key */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Presentation #2.key"; sourceTree = "<group>"; };
+		23C2EE6A1BFCD7EA00AEE75E /* PresentationSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationSession.swift; sourceTree = "<group>"; };
+		23C2EE6E1BFCDA4500AEE75E /* ConnectivityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectivityManager.swift; sourceTree = "<group>"; };
+		23DF179A1C1195370081A94F /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DropboxSDK.framework; sourceTree = "<group>"; };
+		23DF179C1C1195590081A94F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		23F074071C2D7B0500563DF9 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = "Objective C files/MBProgressHUD.h"; sourceTree = "<group>"; };
+		23F074081C2D7B0E00563DF9 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = "Objective C files/MBProgressHUD.m"; sourceTree = "<group>"; };
+		2FCAA978A0FC47C53978D036 /* Pods-SmartSlides.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartSlides.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartSlides/Pods-SmartSlides.debug.xcconfig"; sourceTree = "<group>"; };
+		37D1D1011C2C27A56A1DEAE8 /* libPods-SmartSlides.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SmartSlides.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84BE71C6182C157DFFFA5072 /* Pods-SmartSlides.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartSlides.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartSlides/Pods-SmartSlides.release.xcconfig"; sourceTree = "<group>"; };
+		8A18328E1A7BA6D20030C5EA /* SmartSlides WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SmartSlides WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A1832911A7BA6D20030C5EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A1832921A7BA6D30030C5EA /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		8A1832941A7BA6D30030C5EA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8A1832981A7BA6D30030C5EA /* SmartSlides WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SmartSlides WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A18329E1A7BA6D30030C5EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A1832A01A7BA6D30030C5EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8A1832A21A7BA6D30030C5EA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8A1832AE1A7BA9DC0030C5EA /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		8A1832AF1A7BA9DC0030C5EA /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		8A7565491A82476D000E2428 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8ACA40AF1A7F8D110080F568 /* SmartSlides WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "SmartSlides WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		8ACBBEF61A83A9920083A9E6 /* Gotham-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Bold.otf"; sourceTree = "<group>"; };
+		8ACBBEF71A83A9920083A9E6 /* Gotham-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-BoldItalic.otf"; sourceTree = "<group>"; };
+		8ACBBEF81A83A9920083A9E6 /* Gotham-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Book.otf"; sourceTree = "<group>"; };
+		8ACBBEF91A83A9920083A9E6 /* Gotham-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-BookItalic.otf"; sourceTree = "<group>"; };
+		8ACBBEFA1A83A9920083A9E6 /* Gotham-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Light.otf"; sourceTree = "<group>"; };
+		8ACBBEFB1A83A9920083A9E6 /* Gotham-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-LightItalic.otf"; sourceTree = "<group>"; };
+		8ACBBEFC1A83A9920083A9E6 /* Gotham-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Medium.otf"; sourceTree = "<group>"; };
+		8ACBBEFD1A83A9920083A9E6 /* Gotham-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-MediumItalic.otf"; sourceTree = "<group>"; };
+		8AD22FF91A8CEABE00887820 /* PresentatorS-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PresentatorS-Bridging-Header.h"; sourceTree = "<group>"; };
+		8AD390841A794E6C008846BE /* PresentatorS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PresentatorS.entitlements; sourceTree = "<group>"; };
+		963F0E771A443F56000C6201 /* SmartSlides.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartSlides.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		963F0E7B1A443F56000C6201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		963F0E7C1A443F56000C6201 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		963F0E911A443F56000C6201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		963F0E921A443F56000C6201 /* PresentatorSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentatorSTests.swift; sourceTree = "<group>"; };
+		963F0E9D1A4440B6000C6201 /* FrameCutter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameCutter.swift; sourceTree = "<group>"; };
+		963FAE0B1A4ABEF200FDE247 /* AdvertiserHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvertiserHandler.swift; sourceTree = "<group>"; };
+		963FAE0D1A4AC3B900FDE247 /* SessionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionHandler.swift; sourceTree = "<group>"; };
+		963FAE0F1A4AC6C500FDE247 /* BrowsingHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowsingHandler.swift; sourceTree = "<group>"; };
+		963FAE111A4B148F00FDE247 /* ContentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentManager.swift; sourceTree = "<group>"; };
+		964EC4C51A51908A00246F5C /* FIle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIle.swift; sourceTree = "<group>"; };
+		96B613F41A4C296E005E3826 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A18328B1A7BA6D20030C5EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		963F0E741A443F56000C6201 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23DF179D1C1195590081A94F /* Security.framework in Frameworks */,
+				23DF179B1C1195370081A94F /* DropboxSDK.framework in Frameworks */,
+				8A75654A1A82476D000E2428 /* QuartzCore.framework in Frameworks */,
+				A2BCF07D792EAB628B41E5A1 /* libPods-SmartSlides.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		231DD8B71C3174160028C4E6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				231DD8AD1C3174130028C4E6 /* AboutViewController.swift */,
+				231DD8AE1C3174130028C4E6 /* BrowsingViewController.swift */,
+				231DD8AF1C3174130028C4E6 /* ConnectivityViewController.swift */,
+				231DD8B01C3174130028C4E6 /* PresentationSelectViewController.swift */,
+				231DD8B11C3174130028C4E6 /* PresentationViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		231DD8B81C3174260028C4E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				231DD8B91C3174400028C4E6 /* ProgressView.swift */,
+				231DD8BA1C3174400028C4E6 /* ProgressView.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		23C057C31BF4DA0600065749 /* Objective C files */ = {
+			isa = PBXGroup;
+			children = (
+				23F074081C2D7B0E00563DF9 /* MBProgressHUD.m */,
+				23F074071C2D7B0500563DF9 /* MBProgressHUD.h */,
+			);
+			name = "Objective C files";
+			sourceTree = "<group>";
+		};
+		8A18328F1A7BA6D20030C5EA /* SmartSlides WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8ACA40AF1A7F8D110080F568 /* SmartSlides WatchKit Extension.entitlements */,
+				8A1832921A7BA6D30030C5EA /* InterfaceController.swift */,
+				8A1832941A7BA6D30030C5EA /* Images.xcassets */,
+				8A1832901A7BA6D20030C5EA /* Supporting Files */,
+			);
+			path = "SmartSlides WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		8A1832901A7BA6D20030C5EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A1832911A7BA6D20030C5EA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A18329C1A7BA6D30030C5EA /* SmartSlides WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				8A18329F1A7BA6D30030C5EA /* Interface.storyboard */,
+				8A1832A21A7BA6D30030C5EA /* Images.xcassets */,
+				8A18329D1A7BA6D30030C5EA /* Supporting Files */,
+			);
+			path = "SmartSlides WatchKit App";
+			sourceTree = "<group>";
+		};
+		8A18329D1A7BA6D30030C5EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A18329E1A7BA6D30030C5EA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8ACBBEF51A83A9920083A9E6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8ACBBEF61A83A9920083A9E6 /* Gotham-Bold.otf */,
+				8ACBBEF71A83A9920083A9E6 /* Gotham-BoldItalic.otf */,
+				8ACBBEF81A83A9920083A9E6 /* Gotham-Book.otf */,
+				8ACBBEF91A83A9920083A9E6 /* Gotham-BookItalic.otf */,
+				8ACBBEFA1A83A9920083A9E6 /* Gotham-Light.otf */,
+				8ACBBEFB1A83A9920083A9E6 /* Gotham-LightItalic.otf */,
+				8ACBBEFC1A83A9920083A9E6 /* Gotham-Medium.otf */,
+				8ACBBEFD1A83A9920083A9E6 /* Gotham-MediumItalic.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		96168A511A44712600F762B1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				231DD8C51C31910A0028C4E6 /* Presentation #1.pptx */,
+				231DD8C61C3191EC0028C4E6 /* Presentation #2.key */,
+				231DD8AB1C3173EB0028C4E6 /* Images.xcassets */,
+				8ACBBEF51A83A9920083A9E6 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		963F0E6E1A443F56000C6201 = {
+			isa = PBXGroup;
+			children = (
+				8AD22FF91A8CEABE00887820 /* PresentatorS-Bridging-Header.h */,
+				963F0E791A443F56000C6201 /* PresentatorS */,
+				963F0E8F1A443F56000C6201 /* PresentatorSTests */,
+				8A18328F1A7BA6D20030C5EA /* SmartSlides WatchKit Extension */,
+				8A18329C1A7BA6D30030C5EA /* SmartSlides WatchKit App */,
+				963F0E781A443F56000C6201 /* Products */,
+				FD0886A909785AC51BD0AF3F /* Frameworks */,
+				FEF9A7E897A84FD74B3D8CD9 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		963F0E781A443F56000C6201 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				963F0E771A443F56000C6201 /* SmartSlides.app */,
+				8A18328E1A7BA6D20030C5EA /* SmartSlides WatchKit Extension.appex */,
+				8A1832981A7BA6D30030C5EA /* SmartSlides WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		963F0E791A443F56000C6201 /* PresentatorS */ = {
+			isa = PBXGroup;
+			children = (
+				963F0E7C1A443F56000C6201 /* AppDelegate.swift */,
+				96E82DC81A4989D400B96EC1 /* UI */,
+				23C057C31BF4DA0600065749 /* Objective C files */,
+				9692881B1A48667E00534CFB /* Extensions */,
+				969288181A485CEC00534CFB /* Model */,
+				96168A511A44712600F762B1 /* Resources */,
+				963F0E9C1A4440AA000C6201 /* Framer */,
+				963F0E7A1A443F56000C6201 /* Supporting Files */,
+			);
+			path = PresentatorS;
+			sourceTree = "<group>";
+		};
+		963F0E7A1A443F56000C6201 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8AD390841A794E6C008846BE /* PresentatorS.entitlements */,
+				963F0E7B1A443F56000C6201 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		963F0E8F1A443F56000C6201 /* PresentatorSTests */ = {
+			isa = PBXGroup;
+			children = (
+				963F0E921A443F56000C6201 /* PresentatorSTests.swift */,
+				963F0E901A443F56000C6201 /* Supporting Files */,
+			);
+			path = PresentatorSTests;
+			sourceTree = "<group>";
+		};
+		963F0E901A443F56000C6201 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				963F0E911A443F56000C6201 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		963F0E9C1A4440AA000C6201 /* Framer */ = {
+			isa = PBXGroup;
+			children = (
+				963F0E9D1A4440B6000C6201 /* FrameCutter.swift */,
+			);
+			path = Framer;
+			sourceTree = "<group>";
+		};
+		969288181A485CEC00534CFB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				23C2EE6A1BFCD7EA00AEE75E /* PresentationSession.swift */,
+				23C2EE6E1BFCDA4500AEE75E /* ConnectivityManager.swift */,
+				963FAE0B1A4ABEF200FDE247 /* AdvertiserHandler.swift */,
+				963FAE0D1A4AC3B900FDE247 /* SessionHandler.swift */,
+				963FAE0F1A4AC6C500FDE247 /* BrowsingHandler.swift */,
+				963FAE111A4B148F00FDE247 /* ContentManager.swift */,
+				96B613F41A4C296E005E3826 /* Logger.swift */,
+				964EC4C51A51908A00246F5C /* FIle.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9692881B1A48667E00534CFB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				231DD8C11C3174730028C4E6 /* AFDateExtension.swift */,
+				231DD8C21C3174730028C4E6 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		96E82DC81A4989D400B96EC1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				231DD8B71C3174160028C4E6 /* Controllers */,
+				231DD8B81C3174260028C4E6 /* Views */,
+				231DD8BD1C3174470028C4E6 /* Main_iPad.storyboard */,
+				231DD8BE1C3174470028C4E6 /* Main_iPhone.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FD0886A909785AC51BD0AF3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23DF179C1C1195590081A94F /* Security.framework */,
+				23DF179A1C1195370081A94F /* DropboxSDK.framework */,
+				8A7565491A82476D000E2428 /* QuartzCore.framework */,
+				8A1832AE1A7BA9DC0030C5EA /* Crashlytics.framework */,
+				8A1832AF1A7BA9DC0030C5EA /* Fabric.framework */,
+				37D1D1011C2C27A56A1DEAE8 /* libPods-SmartSlides.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEF9A7E897A84FD74B3D8CD9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2FCAA978A0FC47C53978D036 /* Pods-SmartSlides.debug.xcconfig */,
+				84BE71C6182C157DFFFA5072 /* Pods-SmartSlides.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A18328D1A7BA6D20030C5EA /* SmartSlides WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A1832AA1A7BA6D30030C5EA /* Build configuration list for PBXNativeTarget "SmartSlides WatchKit Extension" */;
+			buildPhases = (
+				8A18328A1A7BA6D20030C5EA /* Sources */,
+				8A18328B1A7BA6D20030C5EA /* Frameworks */,
+				8A18328C1A7BA6D20030C5EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SmartSlides WatchKit Extension";
+			productName = "SmartSlides WatchKit Extension";
+			productReference = 8A18328E1A7BA6D20030C5EA /* SmartSlides WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		8A1832971A7BA6D30030C5EA /* SmartSlides WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A1832A71A7BA6D30030C5EA /* Build configuration list for PBXNativeTarget "SmartSlides WatchKit App" */;
+			buildPhases = (
+				8A1832961A7BA6D30030C5EA /* Resources */,
+				23DBE55C1BEBA8770057E490 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23DBE5571BEBA8770057E490 /* PBXTargetDependency */,
+			);
+			name = "SmartSlides WatchKit App";
+			productName = "SmartSlides WatchKit App";
+			productReference = 8A1832981A7BA6D30030C5EA /* SmartSlides WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		963F0E761A443F56000C6201 /* SmartSlides */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 963F0E961A443F56000C6201 /* Build configuration list for PBXNativeTarget "SmartSlides" */;
+			buildPhases = (
+				5B6C0846D2C914F86C180C1F /* Check Pods Manifest.lock */,
+				963F0E731A443F56000C6201 /* Sources */,
+				963F0E741A443F56000C6201 /* Frameworks */,
+				963F0E751A443F56000C6201 /* Resources */,
+				7840FA10950CA2344C53D91D /* Copy Pods Resources */,
+				8A1832AD1A7BA9A80030C5EA /* ShellScript */,
+				23DBE55D1BEBA8770057E490 /* Embed Watch Content */,
+				5665E0D5FA95D717AF4151F2 /* Embed Pods Frameworks */,
+				23DF17B01C15C2510081A94F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23DBE5611BF25A940057E490 /* PBXTargetDependency */,
+			);
+			name = SmartSlides;
+			productName = PresentatorS;
+			productReference = 963F0E771A443F56000C6201 /* SmartSlides.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		963F0E6F1A443F56000C6201 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = "";
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = DataArt;
+				TargetAttributes = {
+					8A18328D1A7BA6D20030C5EA = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = G5EG5T3U3L;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					8A1832971A7BA6D30030C5EA = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = G5EG5T3U3L;
+					};
+					963F0E761A443F56000C6201 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = G5EG5T3U3L;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 963F0E721A443F56000C6201 /* Build configuration list for PBXProject "PresentatorS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 963F0E6E1A443F56000C6201;
+			productRefGroup = 963F0E781A443F56000C6201 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				963F0E761A443F56000C6201 /* SmartSlides */,
+				8A18328D1A7BA6D20030C5EA /* SmartSlides WatchKit Extension */,
+				8A1832971A7BA6D30030C5EA /* SmartSlides WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A18328C1A7BA6D20030C5EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ACBBF121A83BB720083A9E6 /* Gotham-Medium.otf in Resources */,
+				8ACBBF101A83BB6F0083A9E6 /* Gotham-LightItalic.otf in Resources */,
+				8ACBBF0C1A83BB640083A9E6 /* Gotham-BookItalic.otf in Resources */,
+				8ACBBF081A83BB5F0083A9E6 /* Gotham-BoldItalic.otf in Resources */,
+				8ACBBF061A83BB5C0083A9E6 /* Gotham-Bold.otf in Resources */,
+				8ACBBF0E1A83BB6D0083A9E6 /* Gotham-Light.otf in Resources */,
+				8ACBBF141A83BB750083A9E6 /* Gotham-MediumItalic.otf in Resources */,
+				8ACBBF0A1A83BB620083A9E6 /* Gotham-Book.otf in Resources */,
+				8A1832951A7BA6D30030C5EA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A1832961A7BA6D30030C5EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ACBBF131A83BB720083A9E6 /* Gotham-Medium.otf in Resources */,
+				8ACBBF111A83BB700083A9E6 /* Gotham-LightItalic.otf in Resources */,
+				8ACBBF0D1A83BB650083A9E6 /* Gotham-BookItalic.otf in Resources */,
+				8ACBBF091A83BB5F0083A9E6 /* Gotham-BoldItalic.otf in Resources */,
+				8ACBBF071A83BB5C0083A9E6 /* Gotham-Bold.otf in Resources */,
+				8ACBBF0F1A83BB6E0083A9E6 /* Gotham-Light.otf in Resources */,
+				8ACBBF151A83BB750083A9E6 /* Gotham-MediumItalic.otf in Resources */,
+				8ACBBF0B1A83BB620083A9E6 /* Gotham-Book.otf in Resources */,
+				8A1832A11A7BA6D30030C5EA /* Interface.storyboard in Resources */,
+				8A1832A31A7BA6D30030C5EA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		963F0E751A443F56000C6201 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ACBBEFE1A83A9920083A9E6 /* Gotham-Bold.otf in Resources */,
+				231DD8C71C3192930028C4E6 /* Presentation #1.pptx in Resources */,
+				8ACBBF031A83A9920083A9E6 /* Gotham-LightItalic.otf in Resources */,
+				8ACBBEFF1A83A9920083A9E6 /* Gotham-BoldItalic.otf in Resources */,
+				8ACBBF021A83A9920083A9E6 /* Gotham-Light.otf in Resources */,
+				8ACBBF041A83A9920083A9E6 /* Gotham-Medium.otf in Resources */,
+				8ACBBF051A83A9920083A9E6 /* Gotham-MediumItalic.otf in Resources */,
+				231DD8AC1C3173EB0028C4E6 /* Images.xcassets in Resources */,
+				231DD8BC1C3174400028C4E6 /* ProgressView.xib in Resources */,
+				8ACBBF011A83A9920083A9E6 /* Gotham-BookItalic.otf in Resources */,
+				231DD8BF1C3174470028C4E6 /* Main_iPad.storyboard in Resources */,
+				231DD8C01C3174470028C4E6 /* Main_iPhone.storyboard in Resources */,
+				8ACBBF001A83A9920083A9E6 /* Gotham-Book.otf in Resources */,
+				231DD8C81C3192950028C4E6 /* Presentation #2.key in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5665E0D5FA95D717AF4151F2 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartSlides/Pods-SmartSlides-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B6C0846D2C914F86C180C1F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7840FA10950CA2344C53D91D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartSlides/Pods-SmartSlides-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A1832AD1A7BA9A80030C5EA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 03015f8fd1f43036e0fe0c77fe7c6ad6dcb5059a db588d560995f6399926aa98bafec1d7ddc6d4e6a8cc34180e7f4fa32d1a6e1f\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A18328A1A7BA6D20030C5EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A1832931A7BA6D30030C5EA /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		963F0E731A443F56000C6201 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				231DD8B61C3174130028C4E6 /* PresentationViewController.swift in Sources */,
+				23C2EE6F1BFCDA4500AEE75E /* ConnectivityManager.swift in Sources */,
+				2357DA4A1C286A18002584D4 /* InterfaceController.swift in Sources */,
+				963FAE101A4AC6C500FDE247 /* BrowsingHandler.swift in Sources */,
+				963F0E7D1A443F56000C6201 /* AppDelegate.swift in Sources */,
+				963FAE0E1A4AC3B900FDE247 /* SessionHandler.swift in Sources */,
+				96B613F51A4C296E005E3826 /* Logger.swift in Sources */,
+				231DD8C31C3174730028C4E6 /* AFDateExtension.swift in Sources */,
+				231DD8B31C3174130028C4E6 /* BrowsingViewController.swift in Sources */,
+				963FAE0C1A4ABEF200FDE247 /* AdvertiserHandler.swift in Sources */,
+				231DD8B41C3174130028C4E6 /* ConnectivityViewController.swift in Sources */,
+				23C2EE6B1BFCD7EA00AEE75E /* PresentationSession.swift in Sources */,
+				231DD8BB1C3174400028C4E6 /* ProgressView.swift in Sources */,
+				963FAE121A4B148F00FDE247 /* ContentManager.swift in Sources */,
+				23F074091C2D7B0E00563DF9 /* MBProgressHUD.m in Sources */,
+				231DD8C41C3174730028C4E6 /* Extensions.swift in Sources */,
+				963F0E9E1A4440B6000C6201 /* FrameCutter.swift in Sources */,
+				231DD8B21C3174130028C4E6 /* AboutViewController.swift in Sources */,
+				231DD8B51C3174130028C4E6 /* PresentationSelectViewController.swift in Sources */,
+				964EC4C61A51908A00246F5C /* FIle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23DBE5571BEBA8770057E490 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A18328D1A7BA6D20030C5EA /* SmartSlides WatchKit Extension */;
+			targetProxy = 23DBE5561BEBA8770057E490 /* PBXContainerItemProxy */;
+		};
+		23DBE5611BF25A940057E490 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A1832971A7BA6D30030C5EA /* SmartSlides WatchKit App */;
+			targetProxy = 23DBE5601BF25A940057E490 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8A18329F1A7BA6D30030C5EA /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A1832A01A7BA6D30030C5EA /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A1832A81A7BA6D30030C5EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = SmartSlides_WatchKit_Extension;
+				INFOPLIST_FILE = "SmartSlides WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dataart.SmartSlides.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "46e74945-468b-4aca-94f2-12b31fc50db2";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		8A1832A91A7BA6D30030C5EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: DataArt Solutions, Inc.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: DataArt Solutions, Inc.";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = YES;
+				IBSC_MODULE = SmartSlides_WatchKit_Extension;
+				INFOPLIST_FILE = "SmartSlides WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dataart.SmartSlides.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "46e74945-468b-4aca-94f2-12b31fc50db2";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		8A1832AB1A7BA6D30030C5EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "SmartSlides WatchKit Extension/SmartSlides WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				ENABLE_BITCODE = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SmartSlides WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dataart.SmartSlides.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "8be00393-b602-4a67-a2e5-ade7e663af77";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		8A1832AC1A7BA6D30030C5EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "SmartSlides WatchKit Extension/SmartSlides WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: DataArt Solutions, Inc.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = "SmartSlides WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dataart.SmartSlides.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "8be00393-b602-4a67-a2e5-ade7e663af77";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		963F0E941A443F56000C6201 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		963F0E951A443F56000C6201 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		963F0E971A443F56000C6201 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FCAA978A0FC47C53978D036 /* Pods-SmartSlides.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_ENTITLEMENTS = PresentatorS/PresentatorS.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = PresentatorS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dataart.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7d5708d2-4f20-4d55-af65-dbadfed70d40";
+				SWIFT_OBJC_BRIDGING_HEADER = "$PROJECT_DIR/PresentatorS-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		963F0E981A443F56000C6201 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84BE71C6182C157DFFFA5072 /* Pods-SmartSlides.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_ENTITLEMENTS = PresentatorS/PresentatorS.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: DataArt Solutions, Inc.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = PresentatorS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dataart.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7d5708d2-4f20-4d55-af65-dbadfed70d40";
+				SWIFT_OBJC_BRIDGING_HEADER = "$PROJECT_DIR/PresentatorS-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A1832A71A7BA6D30030C5EA /* Build configuration list for PBXNativeTarget "SmartSlides WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A1832A81A7BA6D30030C5EA /* Debug */,
+				8A1832A91A7BA6D30030C5EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8A1832AA1A7BA6D30030C5EA /* Build configuration list for PBXNativeTarget "SmartSlides WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A1832AB1A7BA6D30030C5EA /* Debug */,
+				8A1832AC1A7BA6D30030C5EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		963F0E721A443F56000C6201 /* Build configuration list for PBXProject "PresentatorS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				963F0E941A443F56000C6201 /* Debug */,
+				963F0E951A443F56000C6201 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		963F0E961A443F56000C6201 /* Build configuration list for PBXNativeTarget "SmartSlides" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				963F0E971A443F56000C6201 /* Debug */,
+				963F0E981A443F56000C6201 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 963F0E6F1A443F56000C6201 /* Project object */;
+}

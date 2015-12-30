@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Vue-pY-fJH">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9019"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="Iyx-wi-Qn1">
+            <objects>
+                <controller id="Vue-pY-fJH" customClass="InterfaceController" customModule="SmartSlides_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="88" alignment="center" id="P8c-Ui-WPJ">
+                            <items>
+                                <label width="112" height="102" alignment="center" text="Waiting for presentation..." textAlignment="center" numberOfLines="4" id="dAR-AN-MlJ">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                    <variation key="device=watch42mm" width="136"/>
+                                </label>
+                            </items>
+                            <variation key="device=watch42mm" height="93"/>
+                        </group>
+                        <group width="108" height="34" alignment="center" id="ngW-1V-eEl">
+                            <items>
+                                <button width="33" height="33" alignment="left" backgroundImage="prev" id="Jhn-Vx-9CR">
+                                    <variation key="device=watch42mm" height="40" width="40"/>
+                                    <connections>
+                                        <action selector="prevTapped" destination="Vue-pY-fJH" id="ObS-Om-E4N"/>
+                                    </connections>
+                                </button>
+                                <label width="36" height="38" alignment="center" textAlignment="center" id="5OF-XN-5qc">
+                                    <fontDescription key="font" type="boldSystem" pointSize="32"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="boldSystem" pointSize="32"/>
+                                    </variation>
+                                    <variation key="device=watch42mm" height="40" width="52">
+                                        <fontDescription key="font" type="boldSystem" pointSize="36"/>
+                                    </variation>
+                                </label>
+                                <button width="33" height="33" alignment="right" backgroundImage="next" id="OSa-DI-VDE">
+                                    <variation key="device=watch42mm" height="40" width="40"/>
+                                    <connections>
+                                        <action selector="nextTapped" destination="Vue-pY-fJH" id="ZEZ-gB-03g"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <variation key="device=watch42mm" height="40" width="140"/>
+                        </group>
+                        <label width="136" height="12" alignment="left" text="slide" textAlignment="center" id="Ipb-ua-mX6">
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" type="system" weight="light" pointSize="13"/>
+                            <variation key="device=watch38mm" height="10">
+                                <fontDescription key="font" type="system" weight="light" pointSize="12"/>
+                            </variation>
+                            <variation key="device=watch42mm" width="156"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="presentationNameLabel" destination="dAR-AN-MlJ" id="iJn-0S-pTv"/>
+                        <outlet property="presentationSlideLabel" destination="5OF-XN-5qc" id="OHo-op-6l0"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1046.1538461538462" y="290.74358974358978"/>
+        </scene>
+    </scenes>
+</document>
