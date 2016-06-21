@@ -47,7 +47,7 @@ class ConnectivityViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "prepareForPresentation:", name: kReadyToStartImportedPresentationNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ConnectivityViewController.prepareForPresentation(_:)), name: kReadyToStartImportedPresentationNotification, object: nil)
         self.shouldAutorotate()
         
         AppDelegate.shared.browsingManager.connectivityDelegate = self

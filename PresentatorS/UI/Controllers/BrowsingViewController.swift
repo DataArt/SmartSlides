@@ -36,7 +36,7 @@ class BrowsingViewController: UIViewController {
     weak var delegate : BrowsingViewControllerDelegate?
     var serviceType : String?
     
-    var manager : BrowsingManager! {
+    var manager : BrowsingManagerMP! {
         get {
             return AppDelegate.shared.browsingManager
         }
@@ -81,7 +81,7 @@ class BrowsingViewController: UIViewController {
         
         refreshControl = UIRefreshControl()
         refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh", attributes: [NSForegroundColorAttributeName: UIColor.whiteColor().colorWithAlphaComponent(0.7)])
-        refreshControl.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
+        refreshControl.addTarget(self, action: #selector(BrowsingViewController.refresh(_:)), forControlEvents: UIControlEvents.ValueChanged)
         tableView.addSubview(refreshControl)
     }
     

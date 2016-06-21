@@ -43,12 +43,12 @@ class InterfaceController: WKInterfaceController {
     
     @IBAction func prevTapped() {
         if currIndex > 1 && isHostAppActive {
-            currIndex--
+            currIndex = currIndex - 1;
             self.presentationSlideLabel.setText("\(self.currIndex)")
             session?.sendMessage(["page": currIndex - 1, "type" : "regular"], replyHandler: { (response) -> Void in
                 print(response.description)
                 }, errorHandler: { (error) -> Void in
-                    self.currIndex++
+                    self.currIndex += 1
                     self.presentationSlideLabel.setText("\(self.currIndex)")
                     print(error)
             })
@@ -57,12 +57,12 @@ class InterfaceController: WKInterfaceController {
 
     @IBAction func nextTapped() {
         if currIndex < slidesAmountCount && isHostAppActive {
-            currIndex++
+            currIndex += 1
             self.presentationSlideLabel.setText("\(self.currIndex)")
             session?.sendMessage(["page": currIndex - 1, "type" : "regular"], replyHandler: { (response) -> Void in
                 print(response.description)
                 }, errorHandler: { (error) -> Void in
-                    self.currIndex--
+                    self.currIndex -= 1
                     self.presentationSlideLabel.setText("\(self.currIndex)")
                     print(error)
             })

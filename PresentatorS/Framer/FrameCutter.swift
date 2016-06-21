@@ -134,7 +134,7 @@ class FrameCutter: NSObject, FrameCutterInternal {
         while page < totalPages {
             let image = takeScreenShot()
 //            dispatch_group_async(group, queue, {
-            page++
+            page += 1
             result.append(self.saveImageToTmpDirectory(image, page: page))
             NSOperationQueue.mainQueue().addOperationWithBlock({ [unowned self] in
                 let value = CGFloat(page)/CGFloat(totalPages)

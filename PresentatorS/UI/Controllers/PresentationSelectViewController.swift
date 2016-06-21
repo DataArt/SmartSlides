@@ -139,7 +139,7 @@ class PresentationSelectViewController: UIViewController {
         
         refreshControl = UIRefreshControl()
         refreshControl.attributedTitle = NSAttributedString(string: "Pull to synchronize with dropbox", attributes: [NSForegroundColorAttributeName: UIColor.whiteColor().colorWithAlphaComponent(0.7)])
-        refreshControl.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
+        refreshControl.addTarget(self, action: #selector(PresentationSelectViewController.refresh(_:)), forControlEvents: UIControlEvents.ValueChanged)
         
         if dropboxSynchronizationAllowed {
             setupDropboxSynchronization()
@@ -148,7 +148,7 @@ class PresentationSelectViewController: UIViewController {
         addPredefinePresentationFileWithName("Presentation #1", type: "pptx")
         addPredefinePresentationFileWithName("Presentation #2", type: "key")
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "handleDidLinkNotification:", name: "didLinkToDropboxAccountNotification", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(PresentationSelectViewController.handleDidLinkNotification(_:)), name: "didLinkToDropboxAccountNotification", object: nil)
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -435,7 +435,7 @@ extension PresentationSelectViewController : DBRestClientDelegate {
     
     func restClient(client: DBRestClient!, loadedFile destPath: String!, contentType: String!, metadata: DBMetadata!) {
         print("\(metadata.filename) was downloaded. Content type: \(contentType)")
-        downloadedFilesCount++
+        downloadedFilesCount += 1
         dispatch_group_leave(downloadingSyncGroup)
         
         let progressText = "Downloading files... \(downloadedFilesCount) of \(dbPresentationFiles.count)"

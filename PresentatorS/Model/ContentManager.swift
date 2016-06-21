@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import MultipeerConnectivity
 
 enum DirectoryType: Int {
     case Shared = 0
@@ -99,10 +98,6 @@ class ContentManager: NSObject {
         
         do {
             try content = NSFileManager.defaultManager().contentsOfDirectoryAtPath(homeDirPath) as [String]?
-            
-            var val = 4
-            val++
-            
             return content?.map {$0.stringByReplacingOccurrencesOfString(homeDirPath, withString: "", options: [], range: nil)}
         } catch {
             print("Error fetching content from \(homeDirPath)")

@@ -112,14 +112,14 @@ class PresentationViewController: UIViewController {
         createFrameCutter()
         initializePresentation()
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "orientationChanged", name: UIDeviceOrientationDidChangeNotification, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "restoreWatchKitConnectivity", name: kRestoreNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(PresentationViewController.orientationChanged), name: UIDeviceOrientationDidChangeNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(PresentationViewController.restoreWatchKitConnectivity), name: kRestoreNotification, object: nil)
         
         menuView.hidden = true
         pagingCollectionView.hidden = true
         currentPage = Int(startSlide)
         
-        tapGestureRecognizer = UITapGestureRecognizer(target: self, action: "handleTapGesture:")
+        tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(PresentationViewController.handleTapGesture(_:)))
         collectionView.addGestureRecognizer(tapGestureRecognizer)
         
         switch(UIApplication.sharedApplication().statusBarOrientation) {
@@ -279,7 +279,7 @@ class PresentationViewController: UIViewController {
                     if finished {
                         sender.enabled = true
                         self.isCarouselShowed = true
-                        self.carouselTimer = NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: Selector("didTickCarouselTimer:"), userInfo: nil, repeats: false)
+                        self.carouselTimer = NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: #selector(PresentationViewController.didTickCarouselTimer(_:)), userInfo: nil, repeats: false)
                     }
             })
             
@@ -428,7 +428,7 @@ extension PresentationViewController: UICollectionViewDelegate, UICollectionView
             }
             
             carouselTimer.invalidate()
-            carouselTimer = NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: Selector("didTickCarouselTimer:"), userInfo: nil, repeats: false)
+            carouselTimer = NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: #selector(PresentationViewController.didTickCarouselTimer(_:)), userInfo: nil, repeats: false)
             
             updatePagingWithPage(indexPath.row)
             if #available(iOS 9.0, *) {

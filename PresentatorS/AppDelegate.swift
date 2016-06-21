@@ -22,15 +22,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ConnectivityManagerDelega
     
     var window: UIWindow?
     
-    var browsingManager : BrowsingManager {
+    var browsingManager : BrowsingManagerMP {
         get {
-            return BrowsingManager.sharedManager
+            return BrowsingManagerMP.sharedManager
         }
     }
     
-    var advertisingManager : AdvertisingManager {
+    var advertisingManager : AdvertisingManagerMP {
         get {
-            let manager = AdvertisingManager.sharedManager
+            let manager = AdvertisingManagerMP.sharedManager
             manager.delegate = self
             return manager
         }
@@ -139,7 +139,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ConnectivityManagerDelega
     //MARK: ConnectivityManagerDelegate
     
     func connectivityManagerDidChangeState(manager: ConnectivityManager) {
-        let advertiserManager = manager as! AdvertisingManager
+        let advertiserManager = manager as! AdvertisingManagerMP
         if advertiserManager.isActive {
             print("Advertising mode established \nListener mode deactivated")
             browsingManager.isActive = false
